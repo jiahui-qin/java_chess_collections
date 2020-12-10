@@ -4,16 +4,12 @@ import java.util.*;
 
 public class wallTest {
     public static void main(String[] args) {
-        WALL wall = new WALL(5,5);
+        WALL wall = new WALL(20,20);
         Scanner startPlay = new Scanner(System.in);
         System.out.println("请输入第一个玩家的名字");
         PEOPLE player1 = new PEOPLE(startPlay.next());
         System.out.println("请输入第二个玩家的名字");
         PEOPLE player2 = new PEOPLE(startPlay.next());
-        player1.getChess().add(new CHESS(0,0));
-        player1.getChess().add(new CHESS(1,1));
-        player1.getChess().add(new CHESS(2,2));
-        player1.getChess().add(new CHESS(3,3));
         while (true){
             System.out.println("现在由玩家 "+ player1.getName() +" 落子");
             int i1 = startPlay.nextInt();
